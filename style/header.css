@@ -1,0 +1,8 @@
+.header {
+  background-color: white;
+}
+.header__wrapper ul {
+  color: brown;
+  display: flex;
+  gap: 40px;
+}/*# sourceMappingURL=header.css.map */

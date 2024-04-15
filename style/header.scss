@@ -1,0 +1,11 @@
+.header {
+  background-color: white;
+
+  &__wrapper {
+    ul {
+      color: brown;
+      display: flex;
+      gap: 40px;
+    }
+  }
+}

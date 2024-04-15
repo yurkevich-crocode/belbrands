@@ -1,0 +1,15 @@
+@import "container.css";
+@import "header.css";
+@import "reset.css";
+:root {
+  --xs: 360px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+  --xxl: 1440px;
+  --spacing-container: 25px;
+}
+
+.style__background {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */

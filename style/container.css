@@ -1,0 +1,52 @@
+.container {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+@media (min-width: 1201px) {
+  .container {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1440px;
+  }
+}/*# sourceMappingURL=container.css.map */
