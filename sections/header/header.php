@@ -4,7 +4,7 @@
             <ul>
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">Каталог</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="../adminpanel/index.php">Админка</a></li>
             </ul>
         </nav>
     </div>
