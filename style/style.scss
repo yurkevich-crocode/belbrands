@@ -1,6 +1,9 @@
 @import "container.css";
 @import "header.css";
 @import "reset.css";
+@import "hero.css";
+@import "footer.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --xs: 360px;
@@ -9,6 +12,12 @@
   --xl: 1200px;
   --xxl: 1440px;
   --spacing-container: 25px;
+  --swiper-navigation-color: white !important;
+  --swiper-pagination-color: white !important;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
 .style {
