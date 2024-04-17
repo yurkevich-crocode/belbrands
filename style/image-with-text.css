@@ -1,0 +1,33 @@
+.image-with-text {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.image-with-text__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 500px;
+}
+.image-with-text__image {
+  filter: brightness(0.2);
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+}
+.image-with-text__text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  color: white;
+  padding: 40px;
+}
+.image-with-text__text p {
+  font-size: 26px;
+  text-align: justify;
+}
+.image-with-text__text .btn {
+  align-self: flex-end;
+  position: absolute;
+  bottom: 40px;
+}/*# sourceMappingURL=image-with-text.css.map */

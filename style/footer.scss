@@ -2,6 +2,25 @@
   background-color: black;
   color: white;
 
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+
+  &__bottom {
+    padding: 10px 0;
+    background-color: white;
+    color: black;
+  }
+
+  &__nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
   &__nav ul li a {
     color: white;
   }

@@ -2,6 +2,22 @@
   background-color: black;
   color: white;
 }
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.footer__bottom {
+  padding: 10px 0;
+  background-color: white;
+  color: black;
+}
+.footer__nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 .footer__nav ul li a {
   color: white;
 }/*# sourceMappingURL=footer.css.map */

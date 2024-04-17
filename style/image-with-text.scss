@@ -1,0 +1,39 @@
+.image-with-text {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 500px;
+  }
+
+  &__image {
+    filter: brightness(0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    color: white;
+    padding: 40px;
+
+    p {
+      font-size: 26px;
+      text-align: justify;
+    }
+
+    .btn {
+      align-self: flex-end;
+
+      position: absolute;
+      bottom: 40px;
+    }
+  }
+}

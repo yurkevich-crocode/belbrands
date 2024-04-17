@@ -15,6 +15,10 @@
     <?php include "sections/header/header.php" ?>
     <main>
         <?php include "sections/hero/hero.html" ?>
+        <?php include "sections/catalog/catalog.php" ?>
+        <?php include "sections/image-with-text/image-with-text.html" ?>
+
+
     </main>
     <?php include "sections/footer/footer.php" ?>
 
