@@ -76,6 +76,35 @@
   &__review-name-wrapper {
     display: flex;
     align-items: center;
-    gap: 10ox;
+
+    gap: 10px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__rating-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__category {
+    span {
+      font-weight: 600;
+    }
+  }
+
+  &__review-name {
+    font-weight: 900;
+    color: (42, 28, 124);
+    font-size: 18px;
+  }
+
+  &__review-title {
+    font-weight: 600;
   }
 }

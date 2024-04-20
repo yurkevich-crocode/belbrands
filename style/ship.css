@@ -1,0 +1,7 @@
+.ship__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.ship__wrapper p {
+  margin: 20px 0;
+}/*# sourceMappingURL=ship.css.map */

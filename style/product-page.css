@@ -65,5 +65,26 @@
 .product-page__review-name-wrapper {
   display: flex;
   align-items: center;
-  gap: 10ox;
+  gap: 10px;
+}
+.product-page__text {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.product-page__rating-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.product-page__category span {
+  font-weight: 600;
+}
+.product-page__review-name {
+  font-weight: 900;
+  color: 42, 28, 124;
+  font-size: 18px;
+}
+.product-page__review-title {
+  font-weight: 600;
 }/*# sourceMappingURL=product-page.css.map */

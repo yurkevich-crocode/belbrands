@@ -99,10 +99,10 @@ $curEmail;
                                     <span class="users__control-btn btn-edit" data-name="<?=$user[1]?>"
                                         data-last="<?=$user[2]?>" data-password="<?=$user[5]?>" data-id="<?=$user[0]?>"
                                         data-role="<?=$user[6]?>" data-email="<?=$user[3]?>">
-                                        <img src="../../img/pencil.svg" alt="" class="users__control-icon" />
+                                        <img src="./img/pencil.svg" alt="" class="users__control-icon" />
                                     </span>
                                     <span class="users__control-btn btn-delete" data-id="<?=$user[0]?>">
-                                        <img src="../../img/trash.svg" alt="" class="users__control-icon" />
+                                        <img src="./img/trash.svg" alt="" class="users__control-icon" />
                                     </span>
                                     <?}
                   else{?>
@@ -112,10 +112,10 @@ $curEmail;
                                     <span class="users__control-btn btn-edit" data-name="<?=$user[1]?>"
                                         data-last="<?=$user[2]?>" data-password="<?=$user[5]?>" data-id="<?=$user[0]?>"
                                         data-role="<?=$user[6]?>" data-email="<?=$user[3]?>">
-                                        <img src="../../img/pencil.svg" alt="" class="users__control-icon" />
+                                        <img src="./img/pencil.svg" alt="" class="users__control-icon" />
                                     </span>
                                     <span class="users__control-btn btn-delete" data-id="<?=$user[0]?>">
-                                        <img src="../../img/trash.svg" alt="" class="users__control-icon" />
+                                        <img src="./img/trash.svg" alt="" class="users__control-icon" />
                                     </span>
                                     <?}?>
                                 </div>

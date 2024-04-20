@@ -90,9 +90,9 @@ session_start();
                                 <div class="categories__control-wrapper">
                                     <span class="categories__control-btn btn-edit" data-id="<?=$category[0]?>"
                                         data-name="<?=$category[1]?>" data-img="<?=$category[2]?>"><img
-                                            src="../../img/pencil.svg" alt="" class="categories__control-icon" />
+                                            src="./img/pencil.svg" alt="" class="categories__control-icon" />
                                     </span><span class="categories__control-btn btn-delete"
-                                        data-id="<?=$category[0]?>"><img src="../../img/trash.svg" alt=""
+                                        data-id="<?=$category[0]?>"><img src="./img/trash.svg" alt=""
                                             class="categories__control-icon" /></span>
                                 </div>
                             </div>

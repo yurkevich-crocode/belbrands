@@ -1,0 +1,7 @@
+.warranty__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.warranty__wrapper p {
+  margin: 20px 0;
+}/*# sourceMappingURL=warranty.css.map */

@@ -91,10 +91,10 @@ $categoryList = mysqli_fetch_all($categories);
                                         data-name='<?=$brand[1]?>' data-history="<?=$brand[3]?>"
                                         data-date="<?=$brand[2]?>" data-img="<?=$brand[4]?>"
                                         data-category="<?=$brand[5]?>">
-                                        <img src="../../img/pencil.svg" alt="" class="brands__control-icon" />
+                                        <img src="./img/pencil.svg" alt="" class="brands__control-icon" />
                                     </span>
                                     <span class="brands__control-btn btn-delete" data-id="<?=$brand[0]?>">
-                                        <img src="../../img/trash.svg" alt="" class="brands__control-icon" />
+                                        <img src="./img/trash.svg" alt="" class="brands__control-icon" />
                                     </span>
                                 </div>
                             </div>

@@ -35,7 +35,10 @@
                     <div class="product-page__rightside">
                         <div class="product-page__text">
                             <h2>Тестовый товар</h2>
-                            <p class="product-page__category">Категория: Обувь</p>
+                            <p class="product-page__category">
+                                <span>Категория:</span>
+                                Обувь
+                            </p>
 
                             <p class="product-page__description">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -62,6 +65,8 @@
 
 
                             <div class="product-page__more">
+                                <h2>Рейтинг</h2>
+
                                 <span class="product-page__quantity">Осталось: 10 шт.</span>
                                 <div class="product-page__rating-wrapper">
                                     <div class="product-page__rating">
