@@ -1,3 +1,12 @@
+<?php
+require_once("adminpanel/php/getDataBrand.php");
+session_start();
+$currentDate = date('Y-m-d');
+$categoryList = mysqli_fetch_all($categories);
+
+?>
+
+
 <header class="header">
     <div class="container">
         <div class="header__wrapper">
@@ -6,9 +15,7 @@
                 <ul>
                     <li><a href="/index.php">Главная</a></li>
                     <li><a href="/catalog.php">Каталог</a></li>
-                    <li><a href="/ship.php">Доставка</a></li>
-                    <li><a href="/payment.php">Оплата</a></li>
-                    <li><a href="/warranty.php">Гарантия</a></li>
+                    <li><a href="/brands.php">Бренды</a></li>
                 </ul>
             </nav>
             <div class="header__controls">

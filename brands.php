@@ -1,11 +1,11 @@
 <?php
-require_once("adminpanel/php/connect.php");
+require_once("adminpanel/php/getDataBrand.php");
 
-$data_query_products = mysqli_query($conn, "SELECT * FROM `products`");
+$data_query = mysqli_query($conn, "SELECT * FROM `brand_with_category`");
 
+$categories = mysqli_query($conn,  "SELECT * FROM `category`");
 
 ?>
-
 
 
 <!DOCTYPE html>
@@ -22,38 +22,37 @@ $data_query_products = mysqli_query($conn, "SELECT * FROM `products`");
 <body>
     <?php include "sections/header/header.php" ?>
     <main>
-        <section class="catalog-page">
+        <section class="brands-page">
             <div class="container">
-                <div class="catalog-page__wrapper">
+                <div class="brands-page__wrapper">
                     <h2>Каталог товаров</h2>
-                    <div class="catalog-page__items">
-                        <?
-                          $products = mysqli_fetch_all($data_query_products);
-
-                          foreach($products as $product){
-                 ?>
+                    <div class="brands-page__items">
+                        <?php
+              
+              $brands = mysqli_fetch_all($data_query);
+              foreach($brands as $brand){
+              ?>
                         <div class="catalog__item">
-                            <a href="/product-page.php?id=<?= $product[0] ?>" class="catalog__link"></a>
+                            <a href="/brand-page.php?id=<?=$brand[0]?>" class="catalog__link"></a>
                             <div class="catalog__item-img-wrapper">
-                                <img src="<?= $product[6] ?>" alt="">
+                                <img src="adminpanel/<?=$brand[4]?>" alt="">
                             </div>
                             <div class="catalog__item-text">
                                 <p class="catalog__itme-category">
-                                    <?= $product[2] ?>
+                                    <?=$brand[5]?>
                                 </p>
                                 <p class="catalog__item-name">
-                                    <?= $product[1] ?>
+                                    <?=$brand[1]?>
                                 </p>
-                                <span class="catalog__item-price"><span>Цена: </span> <?= $product[4] ?>
-                                    <?= $product[5] ?></span>
                             </div>
                         </div>
+
                         <?}?>
                     </div>
-                    <div class="catalog-page__breadcrumps">
-                        <span class="catalog-page__breadcrumps-btn">
+                    <div class="brands-page__breadcrumps">
+                        <span class="brands-page__breadcrumps-btn">
                             < </span>
-                                <div class="catalog-page__breadcrumps-items">
+                                <div class="brands-page__breadcrumps-items">
                                     <span class="active-page">1</span>
                                     <span>2</span>
 
@@ -64,7 +63,7 @@ $data_query_products = mysqli_query($conn, "SELECT * FROM `products`");
                                     <span>21</span>
 
                                 </div>
-                                <span class="catalog-page__breadcrumps-btn">
+                                <span class="brands-page__breadcrumps-btn">
                                     > </span>
                     </div>
                 </div>

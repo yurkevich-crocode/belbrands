@@ -1,35 +1,35 @@
-.product-page__wrapper {
+.brand-page__wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 60px;
 }
-.product-page__images {
+.brand-page__images {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.product-page__img {
+.brand-page__img {
   width: 100%;
   height: 250px;
   position: relative;
   overflow: hidden;
   border-radius: 15px;
 }
-.product-page__img img {
+.brand-page__img img {
   position: absolute;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.product-page__images-second {
+.brand-page__images-second {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   justify-content: space-between;
 }
-.product-page__img-second {
+.brand-page__img-second {
   width: 100%;
   height: 75px;
   position: relative;
@@ -37,7 +37,7 @@
   border-radius: 15px;
   cursor: pointer;
 }
-.product-page__img-second img {
+.brand-page__img-second img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -46,15 +46,15 @@
   filter: brightness(0.8) grayscale(10);
   transition: 0.3s ease;
 }
-.product-page__img-second:hover img {
+.brand-page__img-second:hover img {
   filter: brightness(1) grayscale(0);
 }
-.product-page__reviews-items {
+.brand-page__reviews-items {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.product-page__review {
+.brand-page__review {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -62,45 +62,45 @@
   border-radius: 15px;
   border: 1px solid rgba(0, 0, 0, 0.493);
 }
-.product-page__review-name-wrapper {
+.brand-page__review-name-wrapper {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.product-page__text {
+.brand-page__text {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.product-page__rating-wrapper {
+.brand-page__rating-wrapper {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.product-page__quantity {
+.brand-page__quantity {
   font-weight: 500;
   font-size: 20px;
 }
-.product-page__quantity-num {
+.brand-page__quantity-num {
   font-weight: 900;
   font-size: 24px;
 }
-.product-page__price {
+.brand-page__price {
   font-weight: 500;
   font-size: 24px;
 }
-.product-page__price-num {
+.brand-page__price-num {
   font-weight: 900;
   font-size: 32px;
 }
-.product-page__category span {
+.brand-page__category span {
   font-weight: 600;
 }
-.product-page__review-name {
+.brand-page__review-name {
   font-weight: 900;
   color: 42, 28, 124;
   font-size: 18px;
 }
-.product-page__review-title {
+.brand-page__review-title {
   font-weight: 600;
-}/*# sourceMappingURL=product-page.css.map */
+}/*# sourceMappingURL=brand-page.css.map */

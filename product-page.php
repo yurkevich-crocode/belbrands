@@ -1,3 +1,22 @@
+<?php
+require_once("adminpanel/php/connect.php");
+$id = $_GET['id'];
+
+
+if(isset($_GET['id'])){
+    $id =  $_GET['id'];
+    $data_query_product = mysqli_query($conn, "SELECT * FROM `products` WHERE `products`.`id` = '$id'");
+
+    $data = mysqli_fetch_all($data_query_product);
+
+   
+}
+
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,7 +36,7 @@
                 <div class="product-page__wrapper">
                     <div class="product-page__images">
                         <div class="product-page__img">
-                            <img src="/static/images/hero.jpg" alt="">
+                            <img src="<?=$data[0][6]?>" alt="">
                         </div>
                         <div class="product-page__images-second">
 
@@ -32,47 +51,40 @@
                             </div>
                         </div>
                     </div>
+
+
                     <div class="product-page__rightside">
                         <div class="product-page__text">
-                            <h2>Тестовый товар</h2>
+                            <h2>
+                                <?=$data[0][1]?>
+                            </h2>
                             <p class="product-page__category">
                                 <span>Категория:</span>
-                                Обувь
+                                <?=$data[0][2]?>
                             </p>
 
                             <p class="product-page__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit. Platea dictumst
-                                quisque
-                                sagittis purus sit amet volutpat consequat. Malesuada proin libero nunc consequat
-                                interdum
-                                varius. Fringilla ut morbi tincidunt augue interdum velit. Enim neque volutpat ac
-                                tincidunt
-                                vitae semper quis lectus. Nibh tortor id aliquet lectus. Vulputate dignissim suspendisse
-                                in
-                                est ante in nibh. Proin sed libero enim sed faucibus turpis in eu. Enim eu turpis
-                                egestas
-                                pretium aenean pharetra magna ac placerat. Ac auctor augue mauris augue. Vehicula ipsum
-                                a
-                                arcu cursus vitae congue. Cum sociis natoque penatibus et magnis. Consequat id porta
-                                nibh
-                                venenatis cras sed felis eget. Eget egestas purus viverra accumsan. Morbi leo urna
-                                molestie
-                                at elementum eu facilisis.
+                                <?=$data[0][3]?>
                             </p>
+                            <span class="product-page__quantity">Осталось:
+                                <span class="product-page__quantity-num"><?=$data[0][7]?> шт.</span>
+                            </span>
+
+                            <span class="product-page__price">Цена:
+                                <span class="product-page__price-num">
+                                    <?=$data[0][4]?> </span><?=$data[0][5]?></span>
+
                             <button class="btn">Добавить в корзину</button>
 
 
                             <div class="product-page__more">
                                 <h2>Рейтинг</h2>
 
-                                <span class="product-page__quantity">Осталось: 10 шт.</span>
                                 <div class="product-page__rating-wrapper">
                                     <div class="product-page__rating">
                                         ⭐⭐⭐⭐⭐
                                     </div>
-                                    <span>(5 из 5)</span>
+                                    <span>( <?=$data[0][8]?> из 5)</span>
                                 </div>
 
                             </div>
